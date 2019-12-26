@@ -5,6 +5,8 @@ import router from './routes'
 import BootstrapVue from 'bootstrap-vue';
 import Vuelidate from 'vuelidate';
 import VueRouter from 'vue-router';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(Vuelidate);
 Vue.router = router;
@@ -29,6 +31,7 @@ router.afterEach((to) => {
 });
 
 Vue.use(VueRouter);
+Vue.use(BootstrapVue);
 
 new Vue({
     el: '#app',
